@@ -40,8 +40,10 @@ error_log("us_log:"."script_entry ".__FILE__." updated at ".date( "Y/m/d H:i", g
 
   <div data-role="content" data-theme="c" class="no-cache">
   	<form action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="post" data-ajax="false">
-		<input type="textbox" name="command" id="command" />
-		<input type="submit" value="コマンド実行" />
+		<label for="command">コマンド:</label>
+    <input type="text" name="command" id="command" value=""/>
+		<!-- <input type="textbox" name="command" id="command" /> -->
+		<input type="submit" value="実行" />
 	</form>
 
   </div>
